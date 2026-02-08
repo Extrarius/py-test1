@@ -1,0 +1,18 @@
+# Режимы: fast (поверхностно), deep (детально)
+mode: fast
+
+# Источник: drive (Google Drive API), local (локальная папка)
+source: drive
+
+# Пути (переопределяются через .env)
+# credentials_path: credentials.json
+# cache_dir: .cache
+
+# Лимит токенов на чанк
+chunk_tokens: 4000
+
+# Параллелизм LLM
+llm_concurrency: 2
+
+# Модель OpenRouter (переопределяется через .env)
+model: google/gemini-flash-1.5
